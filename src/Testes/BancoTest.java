@@ -2,6 +2,8 @@ package Testes;
 
 import static org.junit.Assert.*;
 
+import java.math.BigDecimal;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -31,11 +33,12 @@ public class BancoTest {
 	    @Test
 	    public void testAddCaixas(){
 	    banco.addCaixas(5);
+	    assertEquals(5, banco.getCaixas().size());
 	    }
 	    
-	    @Test
-	    public void testCadastrar(){
-	    
-	    }
+//	    @Test
+//	    public void testCadastrar(){
+//	    
+//	    }
 
 }
