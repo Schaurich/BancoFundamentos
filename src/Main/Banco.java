@@ -13,6 +13,7 @@ public class Banco {
         }
         return clientes;
     }
+    
 
     public void setClientes(ArrayList<Cliente> clientes) {
         this.clientes = clientes;
