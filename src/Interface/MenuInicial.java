@@ -105,9 +105,11 @@ public class MenuInicial extends javax.swing.JFrame {
     }// </editor-fold>                        
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-Main.Banco banco = new Main.Banco("Banco");        
+Main.Banco banco = new Main.Banco(jTextField1.getText());       
+banco.addCaixas(Integer.parseInt(jTextField2.getText()));
 JBanco janela = new JBanco(); 
 janela.show();
+this.dispose();
 
 
     }                                        
