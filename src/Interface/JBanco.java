@@ -5,6 +5,8 @@
  */
 package Interface;
 
+import Main.Banco;
+
 /**
  *
  * @author schaurich
@@ -136,9 +138,13 @@ public class JBanco extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         
     }                                        
-
+   
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-       Cadastrado janela = new Cadastrado();
+        String nome= jTextField1.getText();
+        int i = Integer.parseInt(jTextField2.getText());
+    	Main.Banco.cadastrar(nome,i);
+    	
+    	Cadastrado janela = new Cadastrado();
        janela.show();
     }                                        
 
