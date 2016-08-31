@@ -6,7 +6,15 @@ public class Banco {
 	ArrayList<Cliente> clientes;
     ArrayList<Cliente> clientes65;
     ArrayList<Caixa> caixas;
+    String nome;
 
+    public Banco(String n) {
+    	this.nome = n;
+        clientes = new ArrayList<Cliente>();
+        caixas = new ArrayList<Caixa>();
+    }
+    
+    
     public ArrayList<Cliente> getClientes() {
         for (Cliente c : clientes) {
             System.out.println("Nome:" + c.getNome());
@@ -27,10 +35,7 @@ public class Banco {
         this.caixas = caixas;
     }
 
-    public Banco() {
-        clientes = new ArrayList<Cliente>();
-        caixas = new ArrayList<Caixa>();
-    }
+    
 
     public void tempoAtendimento() {
         for (Caixa c : caixas) {

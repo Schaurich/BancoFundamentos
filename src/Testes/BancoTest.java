@@ -19,7 +19,7 @@ public class BancoTest {
 
 	@Before
 	public void setUp() {
-		banco = new Banco();
+		banco = new Banco("teste");
 	}
 
 //	@Test

@@ -18,7 +18,7 @@ public class CaixaTest {
 
 	    @Before
 	    public void setUp() throws Exception {
-	        banco = new Banco();
+	        banco = new Banco("teste");
 	        caixa = new Caixa(1);
 	        
 	    }
