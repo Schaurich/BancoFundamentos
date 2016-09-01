@@ -6,6 +6,7 @@
 package Interface;
 
 import Main.Banco;
+import Main.DataManager;
 
 /**
  *
@@ -105,8 +106,9 @@ public class MenuInicial extends javax.swing.JFrame {
     }// </editor-fold>                        
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-Main.Banco banco = new Main.Banco(jTextField1.getText());       
-banco.addCaixas(Integer.parseInt(jTextField2.getText()));
+    	DataManager dm = DataManager.getInstance();
+    	Main.Banco banco = new Main.Banco(jTextField1.getText());       
+dm.addCaixas(Integer.parseInt(jTextField2.getText()));
 JBanco janela = new JBanco(); 
 janela.show();
 this.dispose();

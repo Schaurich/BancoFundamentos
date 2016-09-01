@@ -10,15 +10,18 @@ import org.junit.Test;
 import Main.Banco;
 import Main.Caixa;
 import Main.Cliente;
+import Main.DataManager;
 
 public class BancoTest {
 
 	private Banco banco;
 	private Cliente cliente;
 	private Caixa caixa;
+	private DataManager dm;
 
 	@Before
 	public void setUp() {
+		dm = new DataManager();
 		banco = new Banco("teste");
 	}
 
@@ -32,8 +35,8 @@ public class BancoTest {
 
 	@Test
 	public void testAddCaixas() {
-		banco.addCaixas(5);
-		assertEquals(5, banco.getCaixas().size());
+		dm.addCaixas(5);
+		assertEquals(5, dm.getCaixas().size());
 	}
 
 	@Test
