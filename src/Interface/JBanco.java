@@ -161,6 +161,7 @@ public class JBanco extends javax.swing.JFrame {
        
        NomeCliente.setText(nomecliente);
        NumeroCaixa.setText(caixa);
+       
     }                                        
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
